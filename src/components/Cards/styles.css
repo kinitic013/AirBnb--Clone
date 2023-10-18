@@ -1,0 +1,47 @@
+.card-flex
+{
+    display: flex;
+    gap : 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+}
+.card-img
+{
+    height: 280px;
+    width: 300px;
+    border-radius: 1rem;
+
+}
+.card-title
+{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+}
+.card-title-desc
+{
+    
+}
+.card-date
+{
+    opacity: 50%;
+}
+.card-rating
+{
+    display: flex;
+
+}
+.card-price
+{
+    padding-top: 0.4rem;
+    font-size: medium;
+    font-weight: 800;
+    display: flex;
+}
