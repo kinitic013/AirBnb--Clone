@@ -1,10 +1,12 @@
 .card-flex
 {
     display: flex;
-    gap : 2rem;
+    gap: 2rem;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 
 }
 .card
@@ -45,3 +47,88 @@
     font-weight: 800;
     display: flex;
 }
+
+
+/* swip css */
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 350px;
+  }
+  @media only screen and (max-width : 866px)
+  {
+    .carousel {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+  }
+  
+  .slide {
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 7px #666;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide-hidden {
+    display: none;
+  }
+  
+  .arrow {
+    position: absolute;
+    filter: drop-shadow(0px 0px 5px #555);
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    opacity: 20%;
+  }
+  :hover.arrow
+  {
+    position: absolute;
+    filter: drop-shadow(0px 0px 5px #555);
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    opacity: 60%;
+  }
+  
+  .arrow:hover {
+    cursor: pointer;
+  }
+  
+  .arrow-left {
+    left: 1rem;
+  }
+  
+  .arrow-right {
+    right: 1rem;
+  }
+  
+  .indicators {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+  }
+  
+  .indicator {
+    background-color: white;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+  }
+  
+  .indicator-inactive {
+    background-color: grey;
+  }
